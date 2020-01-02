@@ -1,0 +1,9 @@
+version: '3'
+services: 
+  groovy:
+    image: groovy
+    user: root
+    volumes: 
+      - ./app:/home/groovy/scripts
+    working_dir: /home/groovy/scripts
+    command: groovy Example.groovy
